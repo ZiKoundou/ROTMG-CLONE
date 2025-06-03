@@ -13,7 +13,7 @@ public class SpriteBillBoard : MonoBehaviour
         }
         else
         {
-            transform.rotation = Camera.main.transform.rotation;
+            transform.rotation = Quaternion.Euler(Camera.main.transform.eulerAngles.x,0f, Camera.main.transform.eulerAngles.z);
         }
     }
 }
