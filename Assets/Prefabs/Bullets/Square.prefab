@@ -148,3 +148,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Bullet
   direction: {x: 0, y: 0, z: 0}
   speed: 5
+  lifeTime: 1

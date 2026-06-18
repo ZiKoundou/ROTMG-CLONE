@@ -23,7 +23,7 @@ public class Weapon : MonoBehaviour
 	public void Fire()
 	{
 		var firedBullet =  Instantiate(bullet, transform.position, Quaternion.identity);
-		firedBullet.GetComponent<Bullet>().direction = GetDirFromMouse();
+		firedBullet.GetComponent<Bullet>().direction = new Vector3(GetDirFromMouse().x, 0f,GetDirFromMouse().z);
 		firedBullet.GetComponent<Bullet>().Fire();
     }
     // Use this for initialization
